@@ -2,15 +2,14 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
         
-        int A = sc.nextInt();
-        int B = sc.nextInt();
+        Scanner in = new Scanner(System.in);
         
-        int sum = A + B;
+        int A = in.nextInt();
+        int B = in.nextInt();
         
-        System.out.println(sum);
+        System.out.println(A+B);
         
-        sc.close();
+        in.close();
     }
 }
