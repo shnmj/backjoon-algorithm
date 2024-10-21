@@ -1,4 +1,4 @@
-# Programmers
-This is an auto push repository for Baekjoon Online Judge created with [BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub).
+## BackJoon Algorithm
+### 알고리즘 공부, 백준 문제 풀이
 
-### 24.10.19 재시작
+[![Solved.ac 프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=shnmje)](https://solved.ac/shnmje)
