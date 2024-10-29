@@ -1,14 +1,21 @@
+// 나머지 구하기 = 변수 -> 정수형으로 계산
+
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String []args) {
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int c = sc.nextInt();
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
         
-        System.out.printf("%d\n%d\n%d\n%d", (a+b) % c, ((a%c) + (b % c)) % c,
-        (a * b) % c, ((a % c) * (b % c)) % c);
-
+        int A = in.nextInt();
+        int B = in.nextInt();
+        int C = in.nextInt();
+        
+        in.close();
+        
+        System.out.println((A+B)%C);
+        System.out.println((A%C + B%C)%C);
+        System.out.println((A*B)%C);
+        System.out.println((A%C * B%C)%C);
+        
     }
 }
