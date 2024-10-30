@@ -2,16 +2,17 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
+        Scanner in = new Scanner(System.in);
         
-        int c = (b % 10) * a;
-        int d = ((b % 100) /10) * a;
-        int e = (b / 100) * a;
-        System.out.println(c);
-        System.out.println(d);
-        System.out.println(e);
-        System.out.println(a * b);
+        int A = in.nextInt();
+        String B = in.next();
+        
+        in.close();
+        
+        System.out.println(A * (B.charAt(2) - '0'));
+        System.out.println(A * (B.charAt(1) - '0'));
+        System.out.println(A * (B.charAt(0) - '0'));
+        System.out.println(A * Integer.parseInt(B)); // 입력받은 문자열을 int형으로 바꿔서 A와 곱해준 값 출력
+        
     }
 }
