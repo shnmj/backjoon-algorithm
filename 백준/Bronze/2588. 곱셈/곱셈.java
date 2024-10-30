@@ -1,18 +1,24 @@
-import java.util.Scanner;
+// public char[] toCharArray()
+// 문자열로 입력받음과 동시에 char 배열에 각 단어를 담어서 쓰는 법
+// 문자열 길이가 가변적으로 입력받으며 하나씩 참조해야할 때 유용한 메소드
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
 
 public class Main {
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         
-        int A = in.nextInt();
-        String B = in.next();
+        int A = Integer.parseInt(br.readLine());
+        String B = br.readLine();
         
-        in.close();
+        char[] b = B.toCharArray();
         
-        System.out.println(A * (B.charAt(2) - '0'));
-        System.out.println(A * (B.charAt(1) - '0'));
-        System.out.println(A * (B.charAt(0) - '0'));
-        System.out.println(A * Integer.parseInt(B)); // 입력받은 문자열을 int형으로 바꿔서 A와 곱해준 값 출력
+        System.out.println(A * (b[2]-'0'));
+        System.out.println(A * (b[1]-'0'));
+        System.out.println(A * (b[0]-'0'));
+        System.out.println(A * Integer.parseInt(B));
         
     }
 }
